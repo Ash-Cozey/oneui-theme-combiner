@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ThemeBuilder</title>
+  
+  <script>var currentDirectory = window.location.pathname.split('/').slice(0, -1).join('/')</script>
+  <script type="text/javascript">
+    function loadjscssfile(filename, filetype) {
+      if (filetype == "js") { //if filename is a external JavaScript file
+        var fileref = document.createElement('script')
+        fileref.setAttribute("type", "text/javascript")
+        fileref.setAttribute("src", filename)
+      }
+      else if (filetype == "css") { //if filename is an external CSS file
+        var fileref = document.createElement("link")
+        fileref.setAttribute("rel", "stylesheet")
+        fileref.setAttribute("type", "text/css")
+        fileref.setAttribute("href", filename)
+      }
+      if (typeof fileref != "undefined")
+        document.getElementsByTagName("head")[0].appendChild(fileref)
+    }
+
+  </script>
+  
+  <script>
+    loadjscssfile(currentDirectory + "/Fonts/nunito.css", "css")
+    loadjscssfile(currentDirectory + "/Fonts/material-icons.css", "css")
+  </script>
+    
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script src="materialize.min.js"></script>
+    <link rel="stylesheet" href="materialize.min.css">
+    <!--<link rel="stylesheet" href="/oneui-theme-combiner/Fonts/material-icons.css">-->
+
+</head>
+
+<body class="indigo blue-grey darken-4">
+  <div class="card-panel blue-grey darken-2">
+    <h3 class="blue-grey-text text-lighten-3">Time to Theme!</h3>
+  </div>
+  <div class="container">
+    <ul class="collapsible popout">
+      <li>
+        <div class="collapsible-header waves-effect">
+          <i class="material-icons-round md-36">settings_applications</i>Main Setup</div>
+        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header  waves-effect">
+          <i class="material-icons-round md-36">layers</i>Get Substratum Overlays</div>
+        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header  waves-effect">
+          <i class="material-icons-round md-36">view_quilt</i>Get Resources from Existing Theme</div>
+        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      </li>
+    </ul>
+    
+      
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems, {});
+    });
+  </script>
+</body>
+
+</html>
