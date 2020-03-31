@@ -31,39 +31,61 @@
     loadjscssfile(currentDirectory + "/Fonts/material-icons.css", "css")
   </script>
     
+
     <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script src="materialize.min.js"></script>
     <link rel="stylesheet" href="materialize.min.css">
+    <link rel="stylesheet" href="style.css">
     <!--<link rel="stylesheet" href="/oneui-theme-combiner/Fonts/material-icons.css">-->
 
 </head>
 
-<body class="indigo blue-grey darken-4">
-  <div class="card-panel blue-grey darken-2">
-    <h3 class="blue-grey-text text-lighten-3">Time to Theme!</h3>
+<body class="beig">
+  <div class="tealy card-panel">
+    <h4 class="blue-grey-text text-lighten-3">ThemeBuilder for One Ui</h4>
   </div>
   <div class="container">
     <ul class="collapsible popout">
       <li>
-        <div class="collapsible-header waves-effect">
+        <div class="purp collapsible-header waves-effect valign-wrapper">
           <i class="material-icons-round md-36">settings_applications</i>Main Setup</div>
         <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        <div class="collapsible-body penk">
+              <iv class="row">
+
+  </div>
+            <span>Download neccesary files <a href="https://www.google.ca">here</a> <a class="waves-effect waves-light modal-trigger" href="#modal1">What</a>
+            <br>Set base theme</span></div>
       </li>
       <li>
-        <div class="collapsible-header  waves-effect">
+        <div class="collapsible-header waves-effect purp valign-wrapper">
           <i class="material-icons-round md-36">layers</i>Get Substratum Overlays</div>
-        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        <div class="collapsible-body penk"><span>Lorem ipsum dolor sit amet.</span></div>
       </li>
       <li>
-        <div class="collapsible-header  waves-effect">
+        <div class="collapsible-header waves-effect purp valign-wrapper">
           <i class="material-icons-round md-36">view_quilt</i>Get Resources from Existing Theme</div>
-        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        <div class="collapsible-body penk"><span>Lorem ipsum dolor sit amet.</span></div>
       </li>
     </ul>
-    
-      
   </div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal purp">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer purp">
+      <a href="#!" class="modal-close waves-effect btn-flat">Agree</a>
+    </div>
+  </div>
+
   <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, {});
+  });
     document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.collapsible');
     var instances = M.Collapsible.init(elems, {});
