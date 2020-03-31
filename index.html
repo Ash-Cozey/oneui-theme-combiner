@@ -49,13 +49,11 @@
       <li>
         <div class="purp collapsible-header waves-effect valign-wrapper">
           <i class="material-icons-round md-36">settings_applications</i>Main Setup</div>
-        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-        <div class="collapsible-body penk">
-              <iv class="row">
 
-  </div>
-            <span>Download neccesary files <a href="https://www.google.ca">here</a> <a class="waves-effect waves-light modal-trigger" href="#modal1">What</a>
-            <br>Set base theme</span></div>
+        <div class="collapsible-body penk">
+
+           <a class="waves-effect btn modal-trigger purp" href="#depend">External Dependencies</a><br><br>
+            <a class="waves-effect btn modal-trigger purp" href="#files">Download Files</a></div>
       </li>
       <li>
         <div class="collapsible-header waves-effect purp valign-wrapper">
@@ -71,15 +69,29 @@
   </div>
 
   <!-- Modal Structure -->
-  <div id="modal1" class="modal purp">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
+
+    <div id="files" class="modal purp">
+        <div class="modal-content">
+            <h4>Download Files</h4>
+            <p>Click below to download the files required for operation. Extract to ThemeBuilder directory on your sdcard</p>
+        </div>
+        <div class="modal-footer purp">
+            <a href="#!" class="modal-close waves-effect btn-flat purp">Download</a>
+            <a href="#!" class="modal-close waves-effect btn-flat purp">Close</a>
+        </div>
     </div>
-    <div class="modal-footer purp">
-      <a href="#!" class="modal-close waves-effect btn-flat">Agree</a>
+
+    <div id="depend" class="modal purp">
+        <div class="modal-content">
+            <h4 >External Dependencies</h4>
+            <p >This program requires Termux, a terminal emulator as well as its Tasker plugin Termux:Tasker, to hook in Tasker. These are required to rebuild the the themes after you choose all your options. They are hosted on F-Droid for free by the developer, they are also on the Play Store, but the plugin is not free there. Click below to go to F-Droid to download the required apps.</p>
+        </div>
+        <div class="modal-footer purp">
+            <a href="https://f-droid.org/en/packages/com.termux/" class="modal-close waves-effect btn-flat purp">Tasker</a>
+            <a href="https://f-droid.org/en/packages/com.termux.tasker/" class="modal-close waves-effect btn-flat purp">Tasker:Termux</a>
+            <a href="#!" class="modal-close waves-effect btn-flat purp">Close</a>
+        </div>
     </div>
-  </div>
 
   <script>
         document.addEventListener('DOMContentLoaded', function() {

@@ -1,19 +1,20 @@
 .purp {
-    background-color: #8E6877;
+    background-color: #8E6877 !important;
+    color: #F2EABC !important;
 }
 
 .tealy{
-    background-color: #2f767f;
+    background-color: #2f767f !important;
 }
 
 .blu{
-    background-color: #607C8C;
+    background-color: #607C8C !important;
 }
 
 .penk{
-    background-color: #CE898C;
+    background-color: #CE898C !important;
 }
 
 .beig {
-    background-color: #F2EABC;
+    background-color: #F2EABC !important;
 }
